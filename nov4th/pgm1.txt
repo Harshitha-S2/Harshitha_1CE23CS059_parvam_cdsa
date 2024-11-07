@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() {
+    char name[50];
+    char usn[15];
+    float marks[5],total=0,average;
+    int i;
+    printf("enter the student name:");
+    scanf("%s",&name);
+    printf("enter the usn:");
+    scanf("%s",&usn);
+    printf("enter the marks for 5 subjects:\n");
+    for(i=0;i<5;i++){
+        printf("subject %d:",i+1);
+        scanf("%f",&marks[i]);
+        total+=marks[i];
+    }
+    average =total/5;
+    printf("\n student name:%s",name);
+    printf("\n student usn;%s",usn);
+    printf("\n total marks:%.2f\n",total);
+    printf("\n average marks:%.2f\n",average);
+    if(average<35) {printf("%s has been failed",name);
+    }
+    else
+    {
+        printf("%s has been passed",name);
+    }
+    return 0;
+}
