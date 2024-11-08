@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the hexadecimal input:");
+    scanf("%x",&n);
+    printf("decimal:%5d\n",&n);
+    printf("octal:%5o\n",n);
+    printf("uppercase hexadecimal:%5X\n",n);
+
+    return 0;
+}
