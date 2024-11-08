@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str[20],str2[30];
+    printf("enter a string:");
+    scanf("%s",str);
+    for(int i=0;i<strlen(str)-1;i++)
+    {
+        if(str[i]==str[i+1])
+        {
+             str[i]=' ';
+        }
+    }
+    printf("after removing redundant values of string:%s\n",str);
+    return 0;
+}
