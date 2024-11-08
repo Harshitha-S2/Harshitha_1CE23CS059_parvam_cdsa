@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int x,y,*pointer1,*pointer2;
+    x=18;
+    pointer1=&x;
+    pointer2=pointer1;
+    printf("%d\t%d\t%d\n",pointer1,pointer2,x);
+
+    return 0;
+}
