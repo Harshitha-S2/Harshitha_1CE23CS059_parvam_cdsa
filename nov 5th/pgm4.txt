@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+   int x,y,*pointer;
+   x=22;
+   printf("%d\n%d\n",x,y);
+   pointer=&x;
+   printf("%d\n%d\n",x,y);
+   y=*pointer;
+   printf("%d\n%d\n:",x,y);
+   return 0;
+}
