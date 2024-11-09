@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(){
+   double x=8/4;
+   printf("%f",(float)x);
+   return 0;
+}
