@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    char ch;
+    printf("selete(+,-,*,/):");
+    scanf("%c",&ch);
+    printf("enter a value");
+    scanf("%d",&a);
+    printf("enter a value");
+    scanf("%d",&b);
+    switch(ch)
+    {
+        case '+':
+        printf("sum of a and b is:%d",a+b);
+        break;
+        case '*':
+        printf("multiply of a and b is:%d",a*b);
+        break;
+        case '/' :
+        printf("divide of a and b is:%d",a/b);
+        break;
+        case'-':
+        printf("subtract of a and b is:%d",a-b);
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+
+    return 0;
+}
